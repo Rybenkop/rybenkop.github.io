@@ -199,10 +199,10 @@
             } 
         }
         &--1 {
-            background-image: url("../../assets/img/site1.JPG");
+            background-image: url("../../assets/img/site1.jpg");
         }
         &--2 {
-            background-image: url("../../assets/img/site2.JPG");
+            background-image: url("../../assets/img/site2.jpg");
         }
     }
     &__description {
@@ -367,12 +367,12 @@
     box-sizing: border-box;
     &--1 {
         .popup__project-photo {
-            background-image: url("../../assets/img/site1.jpg");
+            background-image: url("../../assets/img/site1.JPG");
         }
     }
     &--2 {
         .popup__project-photo {
-            background-image: url("../../assets/img/site2.jpg");
+            background-image: url("../../assets/img/site2.JPG");
         }
     }
     &__project-photo {
