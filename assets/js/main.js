@@ -45,6 +45,10 @@ $(function() {
         section : ".scroll",
         scrollSpeed: 600
     });
+
+    if($(window).width() < 768) {
+        $.scrollify.disable();
+    };
     
 
     $('.scroll').mouseenter(function(){
@@ -88,6 +92,16 @@ $(function() {
     $(".popup__close").on("click", function() {
         $(".owerlay").addClass("disabled");
         $(".popup--2").addClass("disabled"); 
+    });
+
+    $(".projects__item--3").on("click", function() {
+        $(".owerlay").removeClass("disabled");
+        $(".popup--3").removeClass("disabled");
+    });
+
+    $(".popup__close").on("click", function() {
+        $(".owerlay").addClass("disabled");
+        $(".popup--3").addClass("disabled"); 
     });
 
 

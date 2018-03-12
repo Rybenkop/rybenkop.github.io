@@ -63,6 +63,9 @@
         }
     }
 }
+.project__link {
+    display: block;
+}
 .menu {
     display: flex;
     flex-direction: column;
@@ -192,6 +195,7 @@
         width: 250px;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         &:hover {
             cursor: pointer;
             .projects__description {
@@ -203,6 +207,9 @@
         }
         &--2 {
             background-image: url("../../assets/img/site2.JPG");
+        }
+        &--3 {
+            background-image: url("../../assets/img/conquer.JPG");
         }
     }
     &__description {
@@ -375,10 +382,15 @@
             background-image: url("../../assets/img/site2.JPG");
         }
     }
+    &--3 {
+        .popup__project-photo {
+            background-image: url("../../assets/img/conquer.jpg");
+        }
+        
+    }
     &__project-photo {
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
         position: absolute;
         top: 15%;
         left: 10%;
@@ -498,6 +510,17 @@
 @media (max-width: 576px) {
     .popup {
         padding: 10px 30px;
+        &__project-photo {
+            background-position: center;
+        }
+        &__technologies {
+            bottom: 5%;
+        }
+        &__technologies-list ul {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
     }
     .menu {
         display: none;
