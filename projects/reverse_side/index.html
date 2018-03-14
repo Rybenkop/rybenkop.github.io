@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ReverseSide</title>
+	<link rel="stylesheet" href="dist/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/libs/datatablses/datatables.min.css"/>
+	<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="overlay visible">
+			<span class="overlay__text">Показать модальное окно</span>
+			<button class="overlay__btn" id="open-modal-btn">Открыть</button>
+		</div>
+		<div class="modal">
+				
+			<div class="wrapper">
+				<a href="#" class="close"></a>
+				<div class="b-settings">
+					<h1 class="modal__main-caption">Аналитика по площадкам</h1>
+					<nav class="menu">
+						<a href="#" class="active" id="table">Таблица</a>
+						<a href="#" id="grafik">График</a>
+					</nav>
+				</div>
+				<div class="table-window">
+					<h2 class="table-window__caption">Аналитика даных в таблице</h2>
+					<table id="main-table" class="table">
+						<thead>
+							<tr>
+								<th>Preview</th>
+								<th class="ta-l">Время</th>
+								<th>Статус</th>
+								<th>Площадка<i class="fas fa-arrows-alt-v"></i></th>
+								<th>Тип</th>
+								<th>Цена<i class="fas fa-arrows-alt-v"></i></th>
+								<th>Активность<i class="fas fa-arrows-alt-v"></i></th>
+								<th>Подписок<i class="fas fa-arrows-alt-v"></i></th>
+								<th>Пол<i class="fas fa-arrows-alt-v"></i></th>
+								<th>Возраст</th>
+								<th>CPA<i class="fas fa-arrows-alt-v"></i></th>
+								<th>
+									<span class="table__filter-icon">
+										<i class="fas fa-filter"></i>
+									</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td class="ta-l">
+									<form action="#" class="table__range-form">
+										<input type="text" placeholder="От">
+										<input type="text" placeholder="До">
+									</form>
+								</td>
+								<td>
+									<button class="table__dropdown-btn">Все</button>
+								</td>
+								<td>
+									<form action="#" class="table__search-form">
+										<input type="text" placeholder="Поиск...">
+									</form>
+								</td>
+								<td>
+									<button class="table__dropdown-btn">E</button>
+								</td>
+								<td>
+									<form action="#" class="table__range-form table__range-form--fully-colored">
+										<input type="text" placeholder="От">
+										<input type="text" placeholder="До">
+									</form>
+								</td>
+								<td>
+									<form action="#" class="table__range-form table__range-form--fully-colored table__range-form--bigger">
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</form>
+								</td>
+								<td>
+									<form action="#" class="table__range-form table__range-form--fully-colored table__range-form--bigger">
+										<input type="text" placeholder="От">
+										<input type="text" placeholder="До">
+									</form>
+								</td>
+								<td>
+									<form action="#" class="table__range-form table__range-form--fully-colored ">
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</form>
+								</td>
+								<td>
+									<button class="table__dropdown-btn">Все</button>
+								</td>
+								<td>
+									<form action="#" class="table__range-form table__range-form--fully-colored">
+										<input type="text" placeholder="От">
+										<input type="text" placeholder="До">
+									</form>
+								</td>
+								<td>
+									<span class="info-icon">
+										<i class="fas fa-info"></i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="preview-img" src="assets/img/vk.jpg" alt="img">
+								</td>
+								<td class="ta-l">
+									16.06.17 <br>
+									16:10
+								</td>
+								<td class="check-icon">
+									<i class="fas fa-check"></i>
+								</td>
+								<td class="table__platform">
+									<a href="#">
+										<img class="platform-img" src="assets/img/smile.jpg" alt="img">
+										КиноКайф - Лучшие фильмы
+									</a>
+									<i class="fab fa-vk"></i>
+								</td>
+								<td class="title" data-title="Информационный пост">
+									<i class="fas fa-info"></i>
+								</td>
+								<td>
+									7 375 р.
+								</td>
+								<td>
+									<div class="table__activity">
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-heart"></i>
+												0
+											</span>
+										</div>
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-bullhorn"></i>
+												0
+											</span>
+											<span class="table__activity-value">
+												<i class="fas fa-comments"></i>
+												0
+											</span>
+										</div>
+									</div>
+								</td>
+								<td class="ta-r table__subs">
+									<span>0</span>
+								</td>
+								<td>
+									<i class="fas fa-times-circle"></i>
+								</td>
+								<td>
+									<i class="fas fa-times-circle"></i>
+								</td>
+								<td>
+									<i class="fas fa-times-circle"></i>
+								</td>
+								<td>
+									<span class="info-icon">
+										<i class="fas fa-info"></i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="preview-img" src="assets/img/vk.jpg" alt="img">
+								</td>
+								<td class="ta-l">
+									16.06.17 <br>
+									16:10
+								</td>
+								<td class="check-icon">
+									<i class="fas fa-check"></i>
+								</td>
+								<td class="table__platform">
+									<a href="#">
+										<img class="platform-img" src="assets/img/smile.jpg" alt="img">
+										КиноКайф - Лучшие фильмы
+									</a>
+									<i class="fab fa-vk"></i>
+								</td>
+								<td class="title" data-title="Информационный пост">
+									<i class="fas fa-info"></i>
+								</td>
+								<td>
+									7 375 р.
+								</td>
+								<td>
+									<div class="table__activity">
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-heart"></i>
+												22060
+											</span>
+										</div>
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-bullhorn"></i>
+												176
+											</span>
+											<span class="table__activity-value">
+												<i class="fas fa-comments"></i>
+												18
+											</span>
+										</div>
+									</div>
+								</td>
+								<td class="ta-r table__subs">
+									<span>2 875</span>
+								</td>
+								<td>
+									<img class="diagram-img" src="assets/img/diagram.jpg" alt="">
+								</td>
+								<td>
+									<img class="grafik-img" src="assets/img/grafik.jpg" alt="">
+								</td>
+								<td class="ta-r table__subs">
+									<span class="value-cpa">
+										2.6 p.
+									</span>
+								</td>
+								<td>
+									<span class="info-icon">
+										<i class="fas fa-info"></i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="preview-img" src="assets/img/vk.jpg" alt="img">
+								</td>
+								<td class="ta-l">
+									16.06.17 <br>
+									16:10
+								</td>
+								<td class="check-icon">
+									<i class="fas fa-check"></i>
+								</td>
+								<td class="table__platform">
+									<a href="#">
+										<img class="platform-img" src="assets/img/smile.jpg" alt="img">
+										КиноКайф - Лучшие фильмы
+									</a>
+									<i class="fab fa-vk"></i>
+								</td>
+								<td class="title" data-title="Информационный пост">
+									<i class="fas fa-info"></i>
+								</td>
+								<td>
+									7 375 р.
+								</td>
+								<td>
+									<div class="table__activity">
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-heart"></i>
+												22060
+											</span>
+										</div>
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-bullhorn"></i>
+												176
+											</span>
+											<span class="table__activity-value">
+												<i class="fas fa-comments"></i>
+												18
+											</span>
+										</div>
+									</div>
+								</td>
+								<td class="ta-r table__subs">
+									<span >2 875</span>
+								</td>
+								<td>
+									<img class="diagram-img" src="assets/img/diagram.jpg" alt="">
+								</td>
+								<td>
+									<img class="grafik-img" src="assets/img/grafik.jpg" alt="">
+								</td>
+								<td class="ta-r table__subs">
+									<span class="value-cpa">
+										2.6 p.
+									</span>
+								</td>
+								<td>
+									<span class="info-icon">
+										<i class="fas fa-info"></i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="preview-img" src="assets/img/vk.jpg" alt="img">
+								</td>
+								<td class="ta-l">
+									16.06.17 <br>
+									16:10
+								</td>
+								<td class="check-icon">
+									<i class="fas fa-check"></i>
+								</td>
+								<td class="table__platform">
+									<a href="#">
+										<img class="platform-img" src="assets/img/smile.jpg" alt="img">
+										КиноКайф - Лучшие фильмы
+									</a>
+									<i class="fab fa-vk"></i>
+								</td>
+								<td class="title" data-title="Информационный пост">
+									<i class="fas fa-info"></i>
+								</td>
+								<td>
+									7 375 р.
+								</td>
+								<td>
+									<div class="table__activity">
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-heart"></i>
+												22060
+											</span>
+										</div>
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-bullhorn"></i>
+												176
+											</span>
+											<span class="table__activity-value">
+												<i class="fas fa-comments"></i>
+												18
+											</span>
+										</div>
+									</div>
+								</td>
+								<td class="ta-r table__subs">
+									<span >2 875</span>
+								</td>
+								<td>
+									<img class="diagram-img" src="assets/img/diagram.jpg" alt="">
+								</td>
+								<td>
+									<img class="grafik-img" src="assets/img/grafik.jpg" alt="">
+								</td>
+								<td class="ta-r table__subs">
+									<span class="value-cpa">
+										2.6 p.
+									</span>
+								</td>
+								<td>
+									<span class="info-icon">
+										<i class="fas fa-info"></i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="preview-img" src="assets/img/vk.jpg" alt="img">
+								</td>
+								<td class="ta-l">
+									16.06.17 <br>
+									16:10
+								</td>
+								<td class="check-icon">
+									<i class="fas fa-check"></i>
+								</td>
+								<td class="table__platform">
+									<a href="#">
+										<img class="platform-img" src="assets/img/smile.jpg" alt="img">
+										КиноКайф - Лучшие фильмы
+									</a>
+									<i class="fab fa-vk"></i>
+								</td>
+								<td class="title" data-title="Информационный пост">
+									<i class="fas fa-info"></i>
+								</td>
+								<td>
+									7 375 р.
+								</td>
+								<td>
+									<div class="table__activity">
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-heart"></i>
+												22060
+											</span>
+										</div>
+										<div class="b-position">
+											<span class="table__activity-value">
+												<i class="fas fa-bullhorn"></i>
+												176
+											</span>
+											<span class="table__activity-value">
+												<i class="fas fa-comments"></i>
+												18
+											</span>
+										</div>
+									</div>
+								</td>
+								<td class="ta-r table__subs">
+									<span >2 875</span>
+								</td>
+								<td>
+									<img class="diagram-img" src="assets/img/diagram.jpg" alt="">
+								</td>
+								<td>
+									<img class="grafik-img" src="assets/img/grafik.jpg" alt="">
+								</td>
+								<td class="ta-r table__subs">
+									<span class="value-cpa">
+										2.6 p.
+									</span>
+								</td>
+								<td>
+									<span class="info-icon">
+										<i class="fas fa-info"></i>
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="graf-window">
+					<h2>Аналитика даных в графике</h2>
+					<div id="container" class="main-graf"></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+	<!-- inject:svg -->
+
+	<!-- endinject -->
+	
+	<script type="text/javascript" src="assets/js/libs/jquery-3.3.1.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script type="text/javascript" src="assets/js/libs/datatablses/datatables.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/highcharts.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
