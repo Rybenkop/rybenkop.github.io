@@ -1,0 +1,126 @@
+/* ::::: http://live-blogs.org/bodyblenz5-doctor/css/main.css ::::: */
+
+* { margin: 0px; padding: 0px; outline: medium none; }
+a { display: block; text-decoration: none; color: inherit; cursor: pointer; }
+ul { list-style: outside none none; }
+img { border: medium none; display: block; }
+div::after { content: ""; display: table; clear: both; }
+html, body { width: 100%; font-size: 16px; font-family: "Arial"; line-height: 1.375; background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 0, 0); }
+h1, h2, h3 { font-weight: normal; }
+.container { margin: 0px auto; padding: 0px 20px; max-width: 930px; box-shadow: 0px 0px 10px 0px rgba(1, 1, 1, 0.2); }
+.header { font-family: "Calibri"; font-size: 16px; }
+.header_top { text-align: right; padding: 8px 0px 0px; background: transparent -moz-linear-gradient(center top , rgb(255, 255, 255) 0%, rgb(235, 235, 235) 100%) repeat scroll 0% 0%; }
+.header_top .container, .nav .container, .footer .container { padding: 0px; max-width: 970px; box-shadow: none; }
+.header_top .container > *, .top_links > *, .top_links > a > *, .header_center .container > *, .header_center .container ul > *, .nav ul li { display: inline-block; vertical-align: middle; }
+.social { margin: 0px 17px 0px 0px; }
+.top_links > a { border-top: 1px solid rgb(211, 211, 211); border-left: 1px solid rgb(211, 211, 211); border-right: 1px solid rgb(211, 211, 211); border-radius: 10px 10px 0px 0px; background-color: rgb(255, 255, 255); height: 27px; line-height: 24px; padding: 0px 12px; color: rgb(102, 153, 0); text-align: center; margin: 0px 0px 0px 1px; }
+.header_center { font-size: 17px; margin: 0px 0px 1px; color: rgb(51, 102, 153); }
+.header_center .container { padding: 5px 0px 3px; position: relative; max-width: 970px; border-radius: 0px 0px 10px 10px; background: transparent url("../img/header_center_bg.jpg") repeat scroll 0% 0%; box-shadow: none; }
+.header_center .container > img { position: absolute; top: -5px; left: 280px; }
+.logo { margin: 0px 54px 0px 20px; font-size: 50px; font-weight: bold; color: #fff; text-shadow: 1px 1px 3px #333; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  letter-spacing: -5px; }
+.logo img { max-width: 100%; }
+.header_center .container ul li:hover { color: rgb(88, 135, 181); }
+.header_center .container ul li span { color: rgb(0, 179, 208); }
+.nav { margin: 0px 0px 21px; }
+.nav .container { color: rgb(255, 255, 255); text-align: center; border-radius: 5px; max-width: 968px; border-width: 1px; border-style: solid; border-color: rgb(11, 118, 126) rgb(11, 118, 126) rgb(11, 117, 125); box-shadow: 0px 0px 0px 1px rgb(17, 210, 225) inset; background: transparent linear-gradient(to bottom, rgb(15, 183, 197) 0%, rgb(5, 163, 175) 50%, rgb(10, 148, 158) 50%, rgb(8, 134, 143) 100%) repeat scroll 0% 0%; }
+.nav ul li { padding: 6px 0px 7px; margin: 0px 17px; }
+.nav ul li:hover { color: rgb(169, 241, 246); }
+.container_inner { padding: 14px 0px 0px; text-align: center; }
+.container_inner > span { font-size: 13px; font-family: "Calibri"; color: rgb(32, 188, 213); display: block; text-align: left; margin: 0px 0px 17px; }
+.container_inner > p { margin: 0px 0px 12px; text-align: left; }
+.container_inner > p a { display: inline-block; color: rgb(43, 83, 255); text-decoration: underline; }
+.container_inner > p a:hover { text-decoration: none; }
+.container_inner > img { display: inline-block; max-width: 100%; margin: 10px 0px; }
+.container_inner > ul { text-align: left; margin: 0px 0px 10px 20px; }
+.container_inner > i { display: block; }
+.title { margin: 0px 0px 28px; text-align: left; }
+.title img { float: left; margin: 0px 45px 10px 0px; }
+.title_text { line-height: 19px; }
+.title_text p { font-size: 12px; color: rgb(178, 178, 178); }
+.title_text p span { color: rgb(0, 204, 204); }
+.title_text h1 { font-size: 30px; font-family: "Calibri"; color: rgb(1, 145, 168); font-weight: bold; line-height: 1.033; margin: 12px 0px 19px; }
+.title_text > span { display: block; margin: 0px 0px 13px; }
+.title_text i { display: block; }
+.bio { text-align: center; margin: 0px 0px 26px; }
+.bio > * { display: inline-block; vertical-align: top; }
+.bio > div { width: 375px; text-align: left; margin: 0px 0px 0px 28px; }
+.bio > div p { margin: 22px 0px 0px; }
+.buttun { border-radius: 5px; background: rgb(243, 56, 57) none repeat scroll 0% 0%; box-shadow: 1px 1.732px 0px 0px rgb(189, 0, 4); width: 240px; height: 43px; font-size: 25px; font-family: "Calibri"; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 43px; text-align: center; margin: 30px auto 37px; }
+/*.buttun:hover { background: rgb(243, 56, 57) none repeat scroll 0% 0%; }*/
+.comments { font-size: 13px; text-align: left; line-height: 16px; width: 630px; }
+.comments h1 { font-size: 17px; font-family: "Calibri"; color: rgb(0, 204, 204); text-transform: uppercase; border-bottom: 1px solid rgb(236, 158, 26); padding: 0px 0px 3px; margin: 0px 0px 12px; }
+.comment { margin: 0px 0px 20px; }
+.comment > img { float: left; }
+.comment_text { float: right; width: 560px; min-height: 60px; padding: 0px 0px 10px; border-bottom: 1px dotted rgb(204, 204, 204); }
+.comment_text span { color: rgb(153, 153, 153); display: block; margin: 0px 0px 5px; }
+span.color { color: rgb(236, 158, 26); }
+.comment_text img { margin: 10px 0px; max-width: 100%; }
+.footer { font-size: 13px; font-family: "Georgia"; color: rgb(163, 162, 162); }
+.footer .container { background: rgb(238, 238, 238) none repeat scroll 0% 0%; padding: 20px 0px; }
+.footer .container > * { display: inline-block; vertical-align: top; margin: 0px 33px 0px 20px; }
+.footer .container a img { max-width: 100%; }
+.footer .container p { width: 370px; text-align: left; }
+img.visit { margin-right: 0px ! important; }
+/* ::::: http://live-blogs.org/bodyblenz5-doctor/css/responsive.css ::::: */
+
+@media only screen and (max-width: 986px) and (min-width: 800px) {
+  .header_center ul { width: 100%; text-align: center; }
+  .nav ul li { margin: 0px 0.7%; }
+  .title img { margin: 0px 25px 10px 0px; width: 45%; }
+  .footer { text-align: center; }
+  .footer .container > * { margin: 0px 0px 0px 10px; }
+  .footer .container p { width: 37%; }
+}
+@media only screen and (max-width: 799px) and (min-width: 640px) {
+  .header { font-size: 14px; }
+  .header_center { font-size: 16px; text-align: center; }
+  .header_center .container > img { display: none; }
+  .nav ul li { margin: 0px 0.2%; }
+  .title img { margin: 0px 25px 10px 0px; width: 45%; }
+  .bio > img { width: 30%; }
+  .comments { width: 100%; }
+  .comment_text { width: 88%; }
+  .footer { text-align: center; }
+  .footer .container > * { margin: 0px 0px 0px 10px; }
+  .footer .container p { width: 66%; }
+  img.visit { margin: 15px 0px 0px ! important; }
+}
+@media only screen and (max-width: 639px) and (min-width: 480px) {
+  .header { font-size: 14px; }
+  .header_top { text-align: center; }
+  .header_center { font-size: 16px; text-align: center; }
+  .logo { margin: 0px; }
+  .header_center .container > img, .social { display: none ! important; }
+  .nav ul li { margin: 0px 1.5%; padding: 2px 0px; }
+  .title img { margin: 0px 25px 10px 0px; width: 45%; }
+  .title_text h1 { font-size: 28px; }
+  .bio { font-size: 14px; }
+  .bio > img { width: 30%; }
+  .bio > div { width: 280px; margin: 0px 0px 0px 10px; }
+  .comments { width: 100%; }
+  .comment_text { width: 85%; }
+  .footer { text-align: center; }
+  .footer .container > * { margin: 0px; }
+  .footer .container p { width: 93%; margin: 10px 0px 0px; padding: 0px 10px; text-align: center; }
+  img.visit { margin: 15px 0px 0px ! important; }
+}
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+  body { line-height: 1.275; }
+  .header { font-size: 14px; }
+  .header_top { text-align: center; }
+  .header_center { font-size: 16px; text-align: center; }
+  .logo { margin: 0px; }
+  .header_center .container > img, .social, .header_top { display: none ! important; }
+  .nav ul li { margin: 0px 1.5%; padding: 2px 0px; }
+  .title img { margin: 0px 25px 10px 0px; width: 100%; }
+  .title_text h1 { font-size: 28px; }
+  .bio { font-size: 13px; }
+  .bio > img { width: 60%; }
+  .bio > div { width: 100%; margin: 10px 0px 0px; }
+  .comments { width: 100%; }
+  .comment_text { width: 76%; }
+  .footer { text-align: center; }
+  .footer .container > * { margin: 0px; }
+  .footer .container p { width: 93%; padding: 0px 10px; margin: 10px 0px 0px; text-align: center; }
+  img.visit { margin: 15px 0px 0px ! important; }
+}
